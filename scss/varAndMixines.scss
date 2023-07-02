@@ -1,0 +1,29 @@
+$bgc: #E5E5E5;
+$black: #333333;
+$accent: #B59571;
+$white: #fff;
+
+$transitionT: .3s all linear;
+
+%orangeBtn {
+    color: $white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 140%;
+    padding: 10px 20px;
+    border: 2px solid $accent;
+    background-color: $accent;
+    transition: $transitionT;
+    cursor: pointer;
+    &:hover {
+        background-color: transparent;
+        color: $accent;
+    }
+}
+
+%h1Text {
+    color: $white;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 140%;
+}

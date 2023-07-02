@@ -1,0 +1,131 @@
+.section__container {
+    max-width: 1330px;
+    margin: 0 auto 0 auto;
+    padding: 0 15px;
+}
+
+.contacts {
+    margin-left: 120px;
+    .section {
+
+        &__title-wrap {
+            display: flex;
+        }
+        &__title {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: $black;
+            margin-right: 30px;
+            &-line {
+                width: 60px;
+                height: 3px;
+                background-color: $accent;
+                margin-top: 9px;
+            }
+        }
+    }
+}
+
+.contacts {
+    &__wrapper {
+        margin-top: 80px;
+    }
+    &__time {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 24px;
+        grid-row-gap: 50px;
+        max-width: 420px;
+    }
+    .time-title {
+        color: $accent;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 120%;
+        margin-bottom: 5px;
+        span {
+            font-size: 64px;
+        }
+    }
+    .time-sub {
+        font-size: 18px;
+        line-height: 140%;
+        color: $black;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .map >img{
+            width: 756px;
+            height: 450px;
+        }
+    }
+}
+.map {
+    position: relative;
+}
+.openingHours {
+
+    padding: 40px;
+    background-color: $black;
+    display: inline-block;
+    position: absolute;
+    left: -16%;
+    top: 12%;
+
+    &__top {
+        margin-bottom: 25px;
+        &-item {
+            img {
+                margin-right: 15px;
+                width: 20px;
+                height: 20px;
+            }
+            a {
+                font-size: 16px;
+                line-height: 140%;
+                color: $white;
+            }
+            display: flex;
+            margin-bottom: 20px;
+        }
+    }
+    &__middle {
+        margin-bottom: 30px;
+        &-title {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 140%;
+            color: $white;
+            margin-bottom: 15px;
+        }
+        &-item {
+            margin-bottom: 15px;
+            display: flex;
+            color: $white;
+            h4 {
+                margin-right: 14px;
+            }
+        }
+    }
+}
+
+.openingHours {
+    &__btns {
+        display: flex;
+        .orangeBtn {
+            @extend %orangeBtn;
+            &.lines {
+               margin-left: 20px; 
+               background-color: transparent;
+               border: 2px solid $white;
+               &:hover {
+                border: 2px solid $accent;
+               }
+            }
+        }
+    }
+}
