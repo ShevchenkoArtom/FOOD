@@ -21,9 +21,42 @@
     a:hover {
         color: $accent;
     }
+    .logo-pic.footer {
+        margin-top: 0;
+        margin-left: 0;
+    }
+}
+
+@media (max-width:1366px) {
+    .footer {
+        margin-left: 100px;
+    }
+}
+@media (max-width:768px) {
+    .footer {
+        margin-left: 0;
+    }
+}
+@media (max-width:630px) {
+    .footer {
+        &__inner {
+            flex-direction: column;
+        }
+    }
+    .logo-pic.footer {
+        margin-top: 0;
+    }
+    p {
+        margin-bottom: 30px;
+    }
+    .payment {
+        margin-bottom: 30px;
+    }
 }
 .payment {
-    display: none;
+    &.dn {
+        display: none;
+    }
     align-items: center;
     &.vis {
         display: block;
@@ -37,3 +70,4 @@
         }
     }
 }
+

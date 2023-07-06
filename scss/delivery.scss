@@ -1,0 +1,97 @@
+.header-delivery {
+        overflow-x: auto;
+       margin-left: 120px;
+}
+.header__container {
+    margin: 0 auto;
+    max-width: 1252px;
+}
+.header__bottom {
+    padding: 30px 0;
+
+    .nav-list {
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+        position: relative;
+
+        li{
+            margin-right: 40px;
+            a {
+                color: $black;
+                white-space: nowrap;
+            }
+            padding-bottom: 5px;
+            text-decoration: none;
+            z-index: 1;
+            position: relative;
+            & a:before {
+                content: "";
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                background-color: $accent;
+                opacity: 0;
+            }
+            & a:not(.is-active):hover {
+                color: $accent;
+            }
+            .nav-indicator {
+                // position: absolute;
+                // left: 0;
+                // bottom: 0;
+                // height: 3px;
+                // z-index: 1;
+            }
+        }
+    }
+}
+.section__cards {
+    margin-bottom: 150px;
+}
+.section__container {
+
+    margin: 0 auto;
+}
+.section__cards {
+    margin-left: 120px;
+}
+.section__card-wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.section__cardf {
+    &-info {
+        padding: 30px;
+        text-align: center;
+        h2 {
+            color: $black;
+            font-size: 20px;
+            line-height: 140%;
+        }
+    }
+    img {
+        max-width: 100%;
+    }
+    max-width: 300px;
+    border: 2px solid rgba(51, 51, 51, 0.2);
+    &:hover {
+        border: 2px solid $accent;
+    }
+}
+.section__card-infoWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    color: $black;
+    font-size: 32px;
+    line-height: 120%;
+    span {
+        font-weight: 400;
+    }
+}

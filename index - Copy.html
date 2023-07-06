@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+
+<body class="body">
+    
+    <div class="wrapper">
+        
+        <main class="main">
+        
+
+
+
+            <section class="contacts">
+                <div class="section__container">
+                    <div class="section__inner">
+                        <div class="section__title-wrap">
+                            <h2 class="section__title">контакты</h2>
+                            <div class="section__title-line"></div>
+                        </div>
+
+                        <div class="contacts__wrapper">
+                            <div class="contacts__time">
+                                <div class="contacts__time-item">
+                                    <h3 class="time-title"><span>2</span> мин</h3>
+                                    <p class="time-sub">из центра <br>Санкт-Петербурга</p>
+                                </div>
+                                <div class="contacts__time-item">
+                                    <h3 class="time-title"><span>12</span> мин</h3>
+                                    <p class="time-sub">из города <br>Зеленогорск</p>
+                                </div>
+                                <div class="contacts__time-item">
+                                    <h3 class="time-title"><span>42</span> мин</h3>
+                                    <p class="time-sub">из аэропорта <br>Пулково</p>
+                                </div>
+                                <div class="contacts__time-item">
+                                    <h3 class="time-title"><span>52</span> мин</h3>
+                                    <p class="time-sub">из города <br>Павловск</p>
+                                </div>
+                            </div>
+                            <div class="map">
+                                <img src="./img/contacts/map.jpg" alt="map" class="map-pic">
+                                <div class="openingHours">
+                                    <div class="openingHours__top">
+                                        <div class="openingHours__top-item">
+                                            <img src="./img/icons/ci_location.svg" alt="location" class="location">
+                                            <a href="#" class="location__link">Санкт-Петербург, Северная дорога, 11</a>
+                                        </div>
+                                        <div class="openingHours__top-item">
+                                            <img src="./img/icons/ci_phone.svg" alt="location" class="location">
+                                            <a href="tel:+79217777777" class="location__link">+7 (921) 777-77-77</a>
+                                        </div>
+                                    </div>
+                                    <div class="openingHours__middle">
+                                        <h3 class="openingHours__middle-title">Время работы</h3>
+                                        <div class="openingHours__middle-item">
+                                            <h4 class="openingHours__middle-day">Вск-Чт</h4>
+                                            <p class="openingHours__middle-time">с 12:00 до 23:00</p>
+                                        </div>
+                                        <div class="openingHours__middle-item">
+                                            <h4 class="openingHours__middle-day">Пт-Сб</h4>
+                                            <p class="openingHours__middle-time">с 12:00 до 03:00</p>
+                                        </div>
+                                    </div>
+                                    <div class="openingHours__btns">
+                                        <div class="orangeBtn bookBtn">Бронь столика</div>
+                                        <div class="orangeBtn lines">Задать вопрос</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <section class="popup-win1 dn">
+            <div class="popup__container">
+                <div class="popup__inner">
+                    <div class="popup__top">
+                        <div class="btn-close"><img src="./img/icons/eva_close-fill.svg" alt="" class="close-btn"></div>
+                        <a href="#" class="logo__header">
+                            <img src="./img/logo.svg" alt="FOOD Logotype" class="logo-pic">
+                        </a>
+                        <h2 class="popup__title">Забронировать столик</h2>
+                    </div>
+                    <form action="#" class="popup__form">
+                        <input placeholder="Имя" type="text" class="popup__form-input">
+                        <input placeholder="Телефон" type="tel" class="popup__form-input">
+                        <div class="popup__form-wrap">
+                            <input placeholder="Гостей" type="text" class="popup__form-input small">
+                            <input placeholder="Время" type="time" class="popup__form-input small">
+                        </div>
+                        <button id="bookF" class="orangeBtn">Забронировать</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

@@ -29,6 +29,18 @@
     }
 }
 
+@media (max-width:1366px) {
+    .contacts {
+        margin-left: 100px;
+    }
+}
+@media (max-width:1024px) {
+}
+@media (max-width:768px) {
+    .contacts {
+        margin-left: 0;
+    }
+}
 .contacts {
     &__wrapper {
         margin-top: 80px;
@@ -65,11 +77,36 @@
         }
     }
 }
+
+@media (max-width:1366px) {
+    .contacts {
+        &__time {
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 20px;
+            grid-row-gap: 40px;
+        }
+        .time-title {
+            font-size: 28px;
+            span {
+                font-size: 50px;
+            }
+        }
+        .time-sub {
+            font-size: 16px;
+        }
+        &__wrapper {
+            .map >img{
+                width: 536px;
+                height: 350px;
+            }
+        }
+    }
+}
+
 .map {
     position: relative;
 }
 .openingHours {
-
     padding: 40px;
     background-color: $black;
     display: inline-block;
@@ -113,7 +150,54 @@
         }
     }
 }
-
+@media (max-width:1366px) {
+    .openingHours {
+        padding: 20px;
+        left: -14%;
+        top: 8%;
+    }
+}
+@media (max-width:1024px) {
+    .openingHours {
+        padding: 40px;
+    
+        &__top {
+            margin-bottom: 25px;
+            &-item {
+                img {
+                    margin-right: 15px;
+                    width: 20px;
+                    height: 20px;
+                }
+                a {
+                    font-size: 16px;
+                    line-height: 140%;
+                    color: $white;
+                }
+                display: flex;
+                margin-bottom: 20px;
+            }
+        }
+        &__middle {
+            margin-bottom: 30px;
+            &-title {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 140%;
+                color: $white;
+                margin-bottom: 15px;
+            }
+            &-item {
+                margin-bottom: 15px;
+                display: flex;
+                color: $white;
+                h4 {
+                    margin-right: 14px;
+                }
+            }
+        }
+    }
+}
 .openingHours {
     &__btns {
         display: flex;

@@ -17,4 +17,10 @@ $(document).ready(function(){
     book.addEventListener("click", function(){
         alert("Вы забронировали столик. (На самом деле это просто макет, поэтому большая часть функционала не работет.)")
     });
+    
+    document.querySelector(".burger").addEventListener ("click", function () {
+        this.classList.toggle("close")
+        document.querySelector(".header__nav").classList.toggle("opened");
+        document.querySelector(".body").classList.toggle("lock");
+    });
 });

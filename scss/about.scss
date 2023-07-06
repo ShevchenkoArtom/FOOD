@@ -8,6 +8,12 @@
     }
 }
 
+
+@media (max-width:768px) {
+    .about {
+        margin-left: 0;
+    }
+}
 .section {
     &__title-wrap{
         display: flex;
@@ -55,28 +61,112 @@
     }
 }
 
+@media (max-width:1024px) {
+    .section {
+        &__wrapper {
+            &-title {
+                font-size: 42px;
+                margin-right: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .about {
+        margin-top: 80px;
+    }
+    .section {
+        &__wrapper {
+            &-title {
+                font-size: 42px;
+                margin-right: 60px;
+            }
+        }
+    }
+}
+@media (max-width:560px) {
+    .about {
+        margin-top: 60px;
+    }
+    .section {
+        &__wrapper {
+            margin-top: 30px;
+            flex-direction: column;
+            &-title {
+                font-size: 42px;
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+@media (max-width:375px)  {
+    .section__wrapper-title {
+        font-size: 32px;
+    }
+}   
 .section__card {
     &:hover &-line {
         border: 1px solid $accent;
     }
     cursor: pointer;
     position: relative;
+    width: 100%;
     &-line {
         border: 1px solid rgba(51, 51, 51, 0.20);
         height: 240px;
         margin-bottom: 64px;
-        
     }
     &-pic {
         position: absolute;
-        top: 50px;
-        left: 35px;
+        max-width: 80%;
+        max-height: 80%;
+        top: 15%;
+        left: 9%;
     }
     .section__title-wrap {
         margin-left: 70px;
     }
 }
 
+@media (max-width:768px) {
+    .section__card {
+        &-line {
+            height: 220px;
+            margin-bottom: 42px;
+        }
+        &-pic {
+            top: 12%;
+            left: 9%;
+        }
+        .section__title-wrap {
+            margin-left: 30px;
+            & h2 {
+                font-size: 16px;
+            }
+            .section__title-line {
+                width: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width:560px) {
+    .section__wrapper.wrap2 {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .section__card {
+        max-width: 80%;
+        margin: 0 auto;
+        margin-top: 30px;
+        img {
+            top: 5%;
+        }
+    }
+}
 .section__wrapper {
     &.btns {
         max-width: 450px;
